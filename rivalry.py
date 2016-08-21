@@ -1,4 +1,4 @@
-from psychopy import core, visual, event, monitors, gui, data
+from psychopy import core, visual, event, monitors, gui, data, parallel
 from psychopy.iohub import launchHubServer  # for parallel key collection
 from datetime import datetime
 import random  # random for randomisation
@@ -105,8 +105,12 @@ def instruct(displaystring):
     keyboard.reporting = False
 
 
-def trigger(value):
-    print(value)
+def trigger(value=0):
+    # send trigger
+    outport.setData(value)  # send the number over
+    # wait for receiver to pick up
+    core.wait(0.002)
+    outport.setData(0)
 
 
 # function for demonstration
