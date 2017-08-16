@@ -17,3 +17,11 @@ It's super hard to know which of matlabs various toolboxes functions come from. 
 You also need to [install psychtoolbox](http://psychtoolbox.org/).
 
 You will also need the visual angle conversion scripts [here](https://github.com/autism-research-centre/convert-visangle).
+
+## Different experiments
+
+There are three experiments:
+
+- `continuous-rivalry` is a standard ~40s rivalry experiment
+- `trial-based-rivalry` is for testing binocular rivalry on lots of small (6s) trials
+- `eeg-rivalry` is for flickering the stimuli to track them via the evoked frequency in EEG data
