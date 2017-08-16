@@ -15,3 +15,5 @@ If that doesn't work or you want to try using conda, just check out [its content
 
 It's super hard to know which of matlabs various toolboxes functions come from. I would imagine the image processing toolbox is required.
 You also need to [install psychtoolbox](http://psychtoolbox.org/).
+
+You will also need the visual angle conversion scripts [here](https://github.com/autism-research-centre/convert-visangle).
